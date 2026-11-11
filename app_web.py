@@ -16,7 +16,7 @@ st.caption("Conectado en tiempo real a los servidores de Binance")
 # Función para traer el precio real de Bitcoin
 def obtener_precio_btc():
     try:
-        url = "https://binance.com"
+        url = "https://binance.us"
         datos = requests.get(url, timeout=5).json()
         return float(datos["price"])
     except Exception:
